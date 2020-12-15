@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* body 설정 */
+body {
+    width: 1200px;
+    height: 700px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+/* header 설정 */
+header {
+    width: 100%;
+    height: 100px;
+}
+header h1 {
+    width: 200px;
+    height: 100px;
+}
+header .logo {
+    width: 200px;
+    height: 100px;
+    position: absolute ;
+    line-height: 130px;
+}
+
+/* menu 설정 */
+nav {
+   float: right; 
+}
+.mainmenu {
+    width: 800px;
+    height: 20px;
+    margin-top: 80px;
+}
+.mainmenu li{
+    float: left;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s;
+}
+.mainmenu li:hover {
+    background-color: #ABCDEF;
+    color: #ffffff;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    margin-top: 5px;
+}
+.submenu li{
+    width: 200px;
+    height: 20px;
+    transition: all 0.4s;
+    color: #000000;
+}
+.submenu li:hover {
+    background-color: #ABCD00;
+    color: inherit;
+}
+.subback {
+    width: 1200px;
+    height: 80px;
+    position: absolute;
+    background-color: lightcoral;
+    z-index: 1;
+    display: none;
+}
+/*2. 메인 슬라이드 */
+.mainslide_div {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+.slideimage ul{
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    float: left;
+    background-color: #000;
+}
+.slideimage ul li{
+    width: 1200px;
+    height: 300px;
+    background-color: #000;
+}
+.slideimage ul li img {
+    width: 1200px;
+    height: 300px;
+}
+
+/*3. content 영역 */
+.c_content li{
+    float: left;
+}
+/* c1 게시판 */
+.notice {
+    width: 360px;
+    height: 160px;
+    padding: 20px;
+    position: relative;
+}
+.notice h2 {
+    float: left;
+}
+.notice h2 ul li {
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    line-height: 30px;
+    text-align: center;
+    background-color: khaki;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    float: left;
+    color: #ffffff;
+}
+table {
+    padding: 5px;
+    width: 360px;
+    height: 130px;
+    text-align: center;
+    font-size: 13px;
+    background-color: palegoldenrod;
+}
+/* c1 갤러리 */
+.gallery {
+    position: absolute;
+    top: 63px;
+    display: none;
+    width: 360px;
+    height: 130px;
+    background-color: palegoldenrod;
+}
+.gallery ul {
+    padding: 15px;
+}
+.gallery ul li{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    float: left;
+    margin-right: 10px;
+}
+.banner {
+    width: 360px;
+    height: 160px;
+    padding: 20px;
+    padding-top: 0px;
+}
+.banner h2 {
+    text-align: center;
+}
+.banner .banner_content {
+    width: 320px;
+    height: 140px;
+    margin: 20px;
+    background-color: sandybrown;
+}
+.goto {
+    width: 360px;
+    height: 160px;
+    padding: 20px;
+    padding-top: 0px;
+}
+.goto h2 {
+    text-align: center;
+}
+.goto .goto_content {
+    width: 320px;
+    height: 140px;
+    margin: 20px;
+    background-color: sandybrown;
+}
+
+/* footer */
+footer {
+    width: 1200px;
+    height: 100px;
+    background-color: sandybrown;
+    margin-top: 200px;
+}
+footer li {
+    float: left;
+}
+footer .logo {
+    width: 200px;
+    height: 40px;
+    padding: 30px;
+}
+footer .copyright {
+    width: 420px;
+    height: 40px;
+    padding: 30px;
+    margin: 0px 100px;
+    line-height: 40px;
+    text-align: center;
+}
+footer .iconzip {
+    width: 260px;
+    height: 100px;
+}
+footer .iconzip ul {
+    float: left;
+    padding-top: 25px;
+}
+footer .iconzip .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-left: 25px;
+    background-color: #fff;
+}
